@@ -1,0 +1,21 @@
+#grid{
+    display: flex;
+
+}
+
+.column{
+    flex: 1;
+    
+}
+
+.cell{
+    background: blue;
+    aspect-ratio: 1/1;
+}
+
+.hoveredcell{
+    background: black;
+    aspect-ratio: 1/1;
+} 
+
+
