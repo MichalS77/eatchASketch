@@ -3,10 +3,22 @@ grid.className = 'grid';
 for(let i = 0; i < 16; i++){
     let column = document.createElement('div');
     column.className = 'column';
-    for(let j = 0; j < 16; j++){
+    for(let j = 0; j < 16
+        ; j++){
         let cell = document.createElement('div');
         cell.className = 'cell';
         column.appendChild(cell);
         };
 grid.appendChild(column);
 }
+
+addEventListener("DOMContentLoaded", () => {
+    let cells = document.querySelectorAll('.cell');
+
+    cells.forEach(cell => {
+        cell.addEventListener('mouseover', () => cell.classList.add('hoveredcell'));
+    });
+
+});
+
+
